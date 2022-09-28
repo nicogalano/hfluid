@@ -38,3 +38,11 @@ React application that allows to determine the hydraulic characteristics of chan
   - Froude > 1.2 o  Froude  <  0.8
 
 testing branch change
+
+# TO DO
+Agregar funcionalidad para que al seleccionar el material muestre un selector de diamteros y espesores 
+
+  -  primero mostrar todo, partir con hdpe, agregar .csv espesores
+  -  inputs: diametro nominal (DN), PN, PE
+  -  output: espesor (e), diametro interior (Di)
+

@@ -146,7 +146,7 @@ p {
   width: 90vw;
   margin: 0 auto;
   max-width: 35rem;
-  margin-top: 8rem;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 992px) {
   .section-center {
@@ -168,7 +168,7 @@ channel List
   border-radius: var(--radius);
   box-shadow: var(--light-shadow);
   transition: var(--transition);
-  padding: 2rem;
+  padding: 0.5rem;
 }
 .section-center:hover {
   box-shadow: var(--dark-shadow);
@@ -437,11 +437,11 @@ Modal
 }
 
 .middle-unit {
-  width: 5%;
+  width: 10%;
 }
 
 .middle-value {
-  width: 30%;
+  width: 25%;
 }
 
 .equals {
@@ -460,4 +460,35 @@ Modal
   font-size: 1rem;
   color: var(--clr-grey-5);
   margin: 0.2rem;
-} 
+}
+
+.pipe-btn {
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--clr-black);
+  padding: 0.375rem 0.75rem;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  transition: var(--transition);
+  font-size: 0.875rem;
+  border: 2px solid var(--clr-black);
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius);
+}
+
+.pipe-selector {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 35rem;
+  margin-top: 5rem;
+}
+@media screen and (min-width: 992px) {
+  .pipe-selector {
+    width: 95vw;
+  }
+}
+
+.btn-row {
+
+}

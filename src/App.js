@@ -84,7 +84,7 @@ function App() {
           </div>
         </div>
         <div className='form-control'>          
-          <label className='column equals'>Select the shape</label>
+          <label className='column equals'>Shape</label>
           <select 
             className='channel equals' 
             value={shape} 
@@ -117,7 +117,7 @@ function App() {
               min={0}
               onChange={(e) =>  setFlow(e.target.value)}
               />
-            <div className='units middle-unit'>m3/hr</div>
+            <div className='units middle-unit'>m3/h</div>
         </div>
         <div className='form-control'>
           <label className='column equals'>Slope</label>
@@ -176,8 +176,20 @@ function App() {
           <div className='column middle-unit'>m</div>
         </div>  
       </div>  
-      
-      
+
+      {/* <section className="pipe-selector">
+        <h3>Pipe</h3>
+        <div className="row">
+          <label className='column'>Material</label>
+        </div>
+        <div className="row">
+          <button className="column equals pipe-btn">HDPE</button>
+          <button className="column equals pipe-btn">STEEL</button>
+        </div>
+        <div className="row">
+          <label className='column'>Material</label>
+        </div>
+      </section> */}
     </section>
   </main>
   )
