@@ -46,3 +46,5 @@ Agregar funcionalidad para que al seleccionar el material muestre un selector de
   -  inputs: diametro nominal (DN), PN, PE
   -  output: espesor (e), diametro interior (Di)
 
+## Style
+Agregar useEffect para que los botones vuelvan al color original luego de apretarlos.
