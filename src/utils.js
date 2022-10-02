@@ -6,6 +6,12 @@ const g = 9.806
 
 var A, P, Yg, L, Theta
 
+// getInternalDiameter(external diameter, thickness)
+export function getInternalDiameter(de, th) {
+  return de - 2*th
+}
+
+// newton(shape,flow,diameter,slope,manning)
 export function newton(s,Q,B,i,n) {
 
   if (i <= 0) {
@@ -56,6 +62,7 @@ export function newton(s,Q,B,i,n) {
 }
 
 // Agregar variables T1 y T2 para otras formas
+// getGeometry(diameter,height,width)
 export function getGeometry(s,H,B) {
   // var A, P, Yg, L, Theta
   
@@ -106,16 +113,19 @@ export function getGeometry(s,H,B) {
 
 }
 
+// getWetArea(shape,height,width)
 export function getWetArea(s,H,B) {
   getGeometry(s,H,B)
   return A
 }
 
+// getHydraulicRadius(shape,normalHeight,diameter)
 export function getHydraulicRadius(s,H,B) {
   getGeometry(s,H,B)
   return A / P
 }
 
+// getFroude(shape,flow,normalHeight,diameter)
 export function getFroude(s,Q,H,B) {
   Q = Q / 3600
   getGeometry(s,H,B)
@@ -125,3 +135,7 @@ export function getFroude(s,Q,H,B) {
 }
 
 export const numberFormatter = new Intl.NumberFormat()
+
+export function getMeterfromMilimeter(a) {
+  return a/1000
+}

@@ -146,7 +146,7 @@ p {
   width: 90vw;
   margin: 0 auto;
   max-width: 35rem;
-  margin-top: 1rem;
+  margin-top: 0.2rem;
 }
 @media screen and (min-width: 992px) {
   .section-center {
@@ -154,7 +154,7 @@ p {
   }
 }
 main {
-  min-height: 100vh;
+  min-height: 90vh;
   display: grid;
   place-items: center;
 }
@@ -426,7 +426,7 @@ Modal
 .column {
   float: left;
   padding: 0.25rem;
-  padding-left: 1rem;
+  /* padding-left: 1rem; */
   border-color: transparent;
   font-size: 1rem;
   color: var(--clr-grey-5);
@@ -489,6 +489,18 @@ Modal
   }
 }
 
-.btn-row {
+.radio-btn {
+  /* hiding browser el */
+    appearance: none;
+    /* Safari support */
+    -webkit-appearance: none;
+    border: 0.2rem solid #fff;
+    background-color: var(--bg-color);
+    border-radius: 50%;
+}
 
+input[type="radio"] {
+    /* height: 1.2rem; */
+    width: 1.2rem;
+    margin-right: 0.5rem;
 }
