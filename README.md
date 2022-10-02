@@ -1,3 +1,4 @@
+# channel-react-app
 React application that allows to determine the hydraulic characteristics of channels
 
 ## Selección de tubería de hdpe
@@ -35,3 +36,5 @@ React application that allows to determine the hydraulic characteristics of chan
 - Criterios
   - 0,6  Diámetro   >=  Altura crítica >=  0,3 Diámetro 
   - Froude > 1.2 o  Froude  <  0.8
+
+testing branch change
